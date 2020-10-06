@@ -107,6 +107,7 @@ body {
 @media only screen and (min-width: 860px) {
   .hlavni-recept {
     min-height: 400px;
+    border-right: 1px solid white;
   }
 }
 .hlavni-recept:hover {
