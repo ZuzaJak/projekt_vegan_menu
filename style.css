@@ -29,12 +29,14 @@ body {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
+  text-shadow: 2px 2px black;
 }
 
 .paticka {
   text-align: center;
   font-size: 14px;
   color: silver;
+  text-shadow: none;
 }
 
 .paticka a {
@@ -85,8 +87,8 @@ body {
 .hlavni-recept {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
     ),
     url('images/salat.jpg');
   background-position: center center;
@@ -111,12 +113,7 @@ body {
   }
 }
 .hlavni-recept:hover {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.1)
-    ),
-    url('images/salat.jpg');
+  background-image: url('images/salat.jpg');
   transition: 0.5s;
 }
 .recepty {
@@ -170,14 +167,18 @@ body {
 .recept2 {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
     ),
     url('images/chlebicek.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px solid white;
+}
+.recept2:hover {
+  background-image: url('images/chlebicek.jpg');
+  transition: 0.5s;
 }
 @media only screen and (min-width: 480px) {
   .recept2 {
@@ -187,8 +188,8 @@ body {
 .recept3 {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
     ),
     url('images/tacos.jpg');
   background-position: center center;
@@ -196,17 +197,25 @@ body {
   background-size: cover;
   border-bottom: 1px solid white;
 }
+.recept3:hover {
+  background-image: url('images/tacos.jpg');
+  transition: 0.5s;
+}
 .recept4 {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
     ),
     url('images/cizrna.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px solid white;
+}
+.recept4:hover {
+  background-image: url('images/cizrna.jpg');
+  transition: 0.5s;
 }
 @media only screen and (min-width: 480px) {
   .recept4 {
@@ -216,12 +225,16 @@ body {
 .recept5 {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
     ),
     url('images/burger.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px solid white;
+}
+.recept5:hover {
+  background-image: url('images/burger.jpg');
+  transition: 0.5s;
 }
