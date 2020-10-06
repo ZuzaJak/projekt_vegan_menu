@@ -1,0 +1,226 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
+/* -------------------------------------------------- */
+
+/*
+pouzivame mobile first pristup
+tj. vychozi styly mimo media query jsou pro nejmensi mobilni zarizeni (telefony)
+s pribyvajici sirkou pridavame media query pro...
+tablety:
+@media (min-width: 480px) {
+}
+notebook/pc:
+@media (min-width: 860px) {
+}
+*/
+body,
+html {
+  height: 100vh;
+}
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+
+.paticka {
+  text-align: center;
+  font-size: 14px;
+  color: silver;
+}
+
+.paticka a {
+  color: silver;
+}
+
+/* ------------------------------- */
+/* ----- DOLE BUDE TVOJE CSS ----- */
+/* ------------------------------- */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+@media only screen and (min-width: 480px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 860px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.doporucujeme {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 480px) {
+  .doporucujeme {
+    min-width: 480px;
+  }
+}
+@media only screen and (min-width: 860px) {
+  .doporucujeme {
+    flex-direction: row;
+    min-width: 860px;
+  }
+}
+.hlavni-recept {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('images/salat.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  font-size: 14px;
+}
+@media only screen and (min-width: 480px) {
+  .hlavni-recept {
+    min-height: 250px;
+  }
+}
+@media only screen and (min-width: 860px) {
+  .hlavni-recept {
+    min-height: 400px;
+  }
+}
+.hlavni-recept:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url('images/salat.jpg');
+  transition: 0.5s;
+}
+.recepty {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 480px) {
+  .recepty {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.hlavni-recept > .recept-nazev {
+  font-size: 28px;
+}
+@media only screen and (min-width: 480px) {
+  .hlavni-recept > .recept-nazev {
+    font-size: 36px;
+  }
+}
+.recept-nazev {
+  margin: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+@media only screen and (min-width: 480px) {
+  .recept-nazev {
+    font-size: 22px;
+  }
+}
+.recept {
+  min-height: 90px;
+  font-size: 14px;
+}
+@media only screen and (min-width: 480px) {
+  .recept {
+    flex: 1 1 50%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.recept-meta {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.recept2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('images/chlebicek.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid white;
+}
+@media only screen and (min-width: 480px) {
+  .recept2 {
+    border-right: 1px solid white;
+  }
+}
+.recept3 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('images/tacos.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid white;
+}
+.recept4 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('images/cizrna.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid white;
+}
+@media only screen and (min-width: 480px) {
+  .recept4 {
+    border-right: 1px solid white;
+  }
+}
+.recept5 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('images/burger.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid white;
+}
