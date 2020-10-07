@@ -21,11 +21,11 @@ notebook/pc:
 @media (min-width: 860px) {
 }
 */
-body,
 html {
-  min-height: 100vh;
+  min-height: 100%;
 }
 body {
+  min-height: 100vh;
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
